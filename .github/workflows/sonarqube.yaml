@@ -29,8 +29,12 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
       
-      - name: SonarQube Scan
+      - name: SonarQube Scan with Debug
         uses: sonarsource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -X
+            -Dsonar.projectKey=github-deneme1
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -Dsonar.sources=.
