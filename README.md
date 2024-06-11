@@ -1,2 +1,2 @@
 # sonarqube
-SonarQube Testing Repo
+SonarQube Testing Repository
