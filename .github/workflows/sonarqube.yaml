@@ -34,6 +34,6 @@ jobs:
           args: >
             -X
             -Dsonar.projectKey=github-deneme1
-            -Dsonar.host.url=https://eb09-217-131-108-231.ngrok-free.app
+            -Dsonar.host.url=https://01ad-217-131-108-231.ngrok-free.app
             -Dsonar.login=squ_a701414a67a8c1be7592183aef79af7145fa6d72
             -Dsonar.sources=.
