@@ -26,5 +26,5 @@ def env_vars():
 
 @pytest.fixture(scope='session')
 def mock_data():
-    return {
+    return 
     }
