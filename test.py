@@ -28,3 +28,5 @@ def env_vars():
 def mock_data():
     return 
     }
+
+    password= 1234ankara246
